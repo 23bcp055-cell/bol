@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio | Your Name</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--bg); }
+        
+        /* Navigation */
+        nav { background: var(--primary); padding: 1rem; position: sticky; top: 0; z-index: 1000; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+
+        /* Sections */
+        section { padding: 60px 10%; max-width: 1000px; margin: auto; background: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        
+        /* Hero/Cover Page */
+        .hero { text-align: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('your-photo.jpg'); background-size: cover; color: white; padding: 100px 10%; border-radius: 0; }
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
+
+        /* Project Cards */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+        
+        /* SWOT Table */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: var(--accent); color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- TABLE OF CONTENTS (Hyperlinked) -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#cv">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#goals">Goals</a>
+        <a href="#assessment">Self-Assessment</a>
+    </nav>
+
+    <!-- COVER PAGE -->
+    <section id="home" class="hero">
+        <img src="https://via.placeholder.com/180" alt="Professional Photo" class="profile-img">
+        <h1>[CJ]</h1>
+        <p>[Academic Program] | [Institution Name]</p>
+        <p><em>"Your tagline reflecting your academic philosophy goes here."</em></p>
+        <p><small>Submitted on: October 24, 2023</small></p>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section id="philosophy">
+        <h2>Introduction & Learning Philosophy</h2>
+        <p>My journey through [Program Name] has been defined by [Core Values]. I believe that education is not just about... [Describe your philosophy here].</p>
+    </section>
+
+    <!-- RESUME/CV -->
+    <section id="cv">
+        <h2>Resume / CV</h2>
+        <p><strong>Technical Skills:</strong> Python, Data Analysis, CAD, Adobe Suite</p>
+        <p><strong>Soft Skills:</strong> Leadership, Critical Thinking, Conflict Resolution</p>
+        <!-- Add more list items for Experience/Education -->
+    </section>
+
+    <!-- INTERDISCIPLINARY PROJECTS -->
+    <section id="projects">
+        <h2>Interdisciplinary Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Project Title 1</h3>
+                <p><strong>Methodology:</strong> Qualitative research combined with software prototyping.</p>
+                <p><strong>Innovation:</strong> First of its kind to integrate X with Y.</p>
+                <p><strong>Challenges:</strong> Budget constraints; solved by using open-source tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SELF-ASSESSMENT & SWOT -->
+    <section id="assessment">
+        <h2>Conclusion & SWOT Analysis</h2>
+        <table>
+            <tr><th>Strengths</th><th>Weaknesses</th></tr>
+            <tr><td>Public Speaking, Coding</td><td>Time Management</td></tr>
+            <tr><th>Opportunities</th><th>Threats</th></tr>
+            <tr><td>Internships in AI</td><td>Rapidly changing tech landscape</td></tr>
+        </table>
+    </section>
+
+</body>
+</html>
